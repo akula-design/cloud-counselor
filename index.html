@@ -34,24 +34,10 @@
     ::selection {
       background-color: #fff888;
     }
-    .column_1 {
-      grid-area: column_1;
-    }
-    .column_2 {
-      grid-area: column_2;
-    }
-    .column_3 {
-      grid-area: column_3;
-    }
     .container {
       display: grid;
-      grid-template-columns: 30ch 30ch 30ch;
-      grid-column-gap: 5ch;
-      grid-row-gap: 5ch;
-      grid-template-areas:
-        "column_1"
-        "column_2"
-        "column_3";
+      grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+      grid-gap: 5ch;
     }
     .col div {
       display: flex;
@@ -72,13 +58,6 @@
       max-width: 100ch;
       margin: auto;
       text-align: right;
-    }
-    @media (min-width: 700px) {
-      .container {
-        grid-template-areas:
-          "column_1 column_2 column_3";
-      }
-    :w
     }
   </style>
 </head>
