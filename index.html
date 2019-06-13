@@ -1,7 +1,180 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <title>CloudCounselor</title>
+  <!-- some styles from https://jrl.ninja/etc/1/ -->
+  <style>
+    body {
+      font-family: Liberation Sans, Arial, sans-serif;
+      background-color: #fffaf7;
+      font-size: 9pt;
+      line-height: 1.5;
+    }
+    main {
+      max-width: 100ch;
+      padding: 3.5ch;
+      margin: auto;
+      text-align: center;
+    }
+    h3 {
+      margin-bottom: 1ch;
+    }
+    section {
+      margin-bottom: 3.5ch;
+    }
+    footer {
+      text-align: center;
+      color: #aaa;
+    }
+    a {
+      color: #666;
+      outline: 0;
+    }
+    ::selection {
+      background-color: #fff888;
+    }
+    .column_1 {
+      grid-area: column_1;
+    }
+    .column_2 {
+      grid-area: column_2;
+    }
+    .column_3 {
+      grid-area: column_3;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 30ch 30ch 30ch;
+      grid-column-gap: 5ch;
+      grid-row-gap: 5ch;
+      grid-template-areas:
+        "column_1"
+        "column_2"
+        "column_3";
+    }
+    .col div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #eee;
+      border-style: solid;
+      border-color: #bbb;
+      border-width: 0 1px 1px;
+      min-height: 13ch;
+    }
+    .col .head {
+      min-height: 8ch;
+      border-top: solid 1px #bbb;
+    }
+    .footer {
+      max-width: 100ch;
+      margin: auto;
+      text-align: right;
+    }
+    @media (min-width: 700px) {
+      .container {
+        grid-template-areas:
+          "column_1 column_2 column_3";
+      }
+    :w
+    }
+  </style>
 </head>
 <body>
+  <main role="main">
+    <h3>
+      Welcome to CloudCounselor!
+    </h3>
+    <section>
+      <p>
+        Our mission is to curate a free library of resources to help makers
+        like you bring ideas to life!  If you're working on a physical product,
+        digital application, or your startup business model, you are in the right
+        place.
+      </p>
+      <p>
+        Below are links to content covering theory, design thinking methodologies,
+        and practical skills.  We are also building a list of maker spaces and
+        incubators / accelerators who exist to help aspiring makers build their
+        products.
+      </p>
+    </section>
+    <section class="container">
+      <div class="col column_1">
+        <div class="head"><strong>Industrial Product Design</strong></div>
+        <div>
+          Introduction:<br>
+          <a>The Industrial Product<br>Design Process</a>
+        </div>
+        <div>
+          Learn:<br>
+          <a>Designing Prototype<br>Renderings for Industrial<br>Products</a>
+        </div>
+        <div>
+          Learn:<br>
+          <a>Industrial Product Prototyping<br>(In a Machine Shop)</a>
+        </div>
+        <div>
+          Discover:<br>
+          <a>MakerSpaces &amp; Fellowships<br>Near Me</a>
+        </div>
+      </div>
+      <div class="col column_2">
+        <div class="head"><strong>Digital Product Design</strong></div>
+        <div>
+          Introduction:<br>
+          <a>The Digital Product<br>Design Process</a>
+        </div>
+        <div>
+          Learn:<br>
+          <a>Designing User<br>Experiences for Digital<br>Products</a>
+        </div>
+        <div>
+          Learn:<br>
+          <a>Digital Product Prototyping<br>(In Software Apps)</a>
+        </div>
+        <div>
+          Discover:<br>
+          <a>Digital Design Labs &amp;<br>Fellowships Near Me</a>
+        </div>
+      </div>
+      <div class="col column_3">
+        <div class="head"><strong>Startup Strategy Design</strong></div>
+        <div>
+          Introduction:<br>
+          <a>The Startup Strategy<br>Design Process</a>
+        </div>
+        <div>
+          Learn:<br>
+          <a>Designing Business Models<br>for Startup Ventures</a>
+        </div>
+        <div>
+          Learn:<br>
+          <a>Fundraising Decks &amp;<br>Pitching to Investors</a>
+        </div>
+        <div>
+          Discover:<br>
+          <a>Incubators / Accelerators &amp;<br>Fellowships Near Me</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <p>
+        If you have feedback, content, or questions for us, please do reach out!<br>
+        founders.akuladesign@gmail.com
+      </p>
+      <p>
+        Cheers &amp; Happy Making,<br>
+        Adam &amp; Kavi
+      </p>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      Copyright &copy; Akula Design Club, 2019.  All rights reserved.
+    </div>
+  </footer>
 </body>
 </html>
